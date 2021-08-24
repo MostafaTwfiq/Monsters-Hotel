@@ -1,0 +1,3 @@
+C:/Users/mosta/CLionProjects/MonstersHotel/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/mosta/CLionProjects/MonstersHotel/cmake-build-debug/CMakeFiles/MonstersHotel.dir
+C:/Users/mosta/CLionProjects/MonstersHotel/cmake-build-debug/CMakeFiles/rebuild_cache.dir
