@@ -18,6 +18,7 @@ protected:
     Guest(string userName, UserType userT,
           int nightC, int dryClC, int spaC, int numOfN, int numOfRooms,
           bool dryCB, bool spaCB);
+    ~Guest();
 
 public:
     int getCostPerNight();

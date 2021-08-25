@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/mosta/CLionProjects/MonstersHotel/Properties/HotelProperties.cpp">
+			<Option target="MonstersHotel"/>
+		</Unit>
+		<Unit filename="C:/Users/mosta/CLionProjects/MonstersHotel/Properties/HotelProperties.h">
+			<Option target="MonstersHotel"/>
+		</Unit>
 		<Unit filename="C:/Users/mosta/CLionProjects/MonstersHotel/Users/Guest.cpp">
 			<Option target="MonstersHotel"/>
 		</Unit>

@@ -4,3 +4,7 @@ Monster::Monster(string name, int numOfNights, int numOfRooms, bool dryC, bool s
 : Guest(move(name), MONSTER, 200, 30, 50, numOfNights, numOfRooms, dryC, spaC) {
 
 }
+
+Monster::~Monster() {
+
+}

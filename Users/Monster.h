@@ -7,6 +7,7 @@ class Monster : public Guest {
 
 public:
     Monster(string name, int numOfNights, int numOfRooms, bool dryC, bool spaC);
+    ~Monster();
 
 };
 

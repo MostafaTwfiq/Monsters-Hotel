@@ -1,10 +1,12 @@
 #include "User.h"
 
+#include <utility>
+
 
 User::User() {}
 
-User::User(string name, UserType userType) : name(name), userType(userType) {
-    User::ID_counter = 0;
+User::User(string name, UserType userType) : name(move(name)), userType(userType) {
+
 }
 
 int User::getID() {

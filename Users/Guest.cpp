@@ -46,3 +46,7 @@ int Guest::calExtraNightsCost(int extraNights) {
 int Guest::getNumOfRooms() {
     return Guest::numOfRooms;
 }
+
+Guest::~Guest() {
+
+}

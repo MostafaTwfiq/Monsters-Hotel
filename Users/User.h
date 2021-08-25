@@ -14,7 +14,6 @@ private:
     string name;
     UserType userType;
     int ID;
-    static int IDCounter;
 
 
 protected:

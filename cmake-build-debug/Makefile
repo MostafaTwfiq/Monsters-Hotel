@@ -141,6 +141,33 @@ MonstersHotel/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonstersHotel.dir\build.make CMakeFiles/MonstersHotel.dir/build
 .PHONY : MonstersHotel/fast
 
+Properties/HotelProperties.obj: Properties/HotelProperties.cpp.obj
+
+.PHONY : Properties/HotelProperties.obj
+
+# target to build an object file
+Properties/HotelProperties.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonstersHotel.dir\build.make CMakeFiles/MonstersHotel.dir/Properties/HotelProperties.cpp.obj
+.PHONY : Properties/HotelProperties.cpp.obj
+
+Properties/HotelProperties.i: Properties/HotelProperties.cpp.i
+
+.PHONY : Properties/HotelProperties.i
+
+# target to preprocess a source file
+Properties/HotelProperties.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonstersHotel.dir\build.make CMakeFiles/MonstersHotel.dir/Properties/HotelProperties.cpp.i
+.PHONY : Properties/HotelProperties.cpp.i
+
+Properties/HotelProperties.s: Properties/HotelProperties.cpp.s
+
+.PHONY : Properties/HotelProperties.s
+
+# target to generate assembly for a file
+Properties/HotelProperties.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonstersHotel.dir\build.make CMakeFiles/MonstersHotel.dir/Properties/HotelProperties.cpp.s
+.PHONY : Properties/HotelProperties.cpp.s
+
 Users/Guest.obj: Users/Guest.cpp.obj
 
 .PHONY : Users/Guest.obj
@@ -285,6 +312,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... MonstersHotel
+	@echo ... Properties/HotelProperties.obj
+	@echo ... Properties/HotelProperties.i
+	@echo ... Properties/HotelProperties.s
 	@echo ... Users/Guest.obj
 	@echo ... Users/Guest.i
 	@echo ... Users/Guest.s

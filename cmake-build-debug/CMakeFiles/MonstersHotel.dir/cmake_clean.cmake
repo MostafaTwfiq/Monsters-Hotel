@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/MonstersHotel.dir/Properties/HotelProperties.cpp.obj"
   "CMakeFiles/MonstersHotel.dir/Users/Guest.cpp.obj"
   "CMakeFiles/MonstersHotel.dir/Users/Human.cpp.obj"
   "CMakeFiles/MonstersHotel.dir/Users/Monster.cpp.obj"

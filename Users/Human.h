@@ -6,6 +6,7 @@
 class Human : public Guest{
 
     Human(string name, int numOfNights, int numOfRooms, bool dryC, bool spaC);
+    ~Human();
 
 };
 
