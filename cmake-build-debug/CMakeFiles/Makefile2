@@ -92,12 +92,12 @@ clean: CMakeFiles/MonstersHotel.dir/clean
 CMakeFiles/MonstersHotel.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonstersHotel.dir\build.make CMakeFiles/MonstersHotel.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonstersHotel.dir\build.make CMakeFiles/MonstersHotel.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\mosta\CLionProjects\MonstersHotel\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target MonstersHotel"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\mosta\CLionProjects\MonstersHotel\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6 "Built target MonstersHotel"
 .PHONY : CMakeFiles/MonstersHotel.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/MonstersHotel.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\mosta\CLionProjects\MonstersHotel\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\mosta\CLionProjects\MonstersHotel\cmake-build-debug\CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/MonstersHotel.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\mosta\CLionProjects\MonstersHotel\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/MonstersHotel.dir/rule

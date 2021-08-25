@@ -1,0 +1,10 @@
+#ifndef MONSTERSHOTEL_HUMAN_H
+#define MONSTERSHOTEL_HUMAN_H
+
+
+class Human {
+
+};
+
+
+#endif //MONSTERSHOTEL_HUMAN_H

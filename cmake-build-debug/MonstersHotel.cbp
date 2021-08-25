@@ -82,6 +82,30 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/mosta/CLionProjects/MonstersHotel/Users/Guest.cpp">
+			<Option target="MonstersHotel"/>
+		</Unit>
+		<Unit filename="C:/Users/mosta/CLionProjects/MonstersHotel/Users/Guest.h">
+			<Option target="MonstersHotel"/>
+		</Unit>
+		<Unit filename="C:/Users/mosta/CLionProjects/MonstersHotel/Users/Human.cpp">
+			<Option target="MonstersHotel"/>
+		</Unit>
+		<Unit filename="C:/Users/mosta/CLionProjects/MonstersHotel/Users/Human.h">
+			<Option target="MonstersHotel"/>
+		</Unit>
+		<Unit filename="C:/Users/mosta/CLionProjects/MonstersHotel/Users/Monster.cpp">
+			<Option target="MonstersHotel"/>
+		</Unit>
+		<Unit filename="C:/Users/mosta/CLionProjects/MonstersHotel/Users/Monster.h">
+			<Option target="MonstersHotel"/>
+		</Unit>
+		<Unit filename="C:/Users/mosta/CLionProjects/MonstersHotel/Users/User.cpp">
+			<Option target="MonstersHotel"/>
+		</Unit>
+		<Unit filename="C:/Users/mosta/CLionProjects/MonstersHotel/Users/User.h">
+			<Option target="MonstersHotel"/>
+		</Unit>
 		<Unit filename="C:/Users/mosta/CLionProjects/MonstersHotel/main.cpp">
 			<Option target="MonstersHotel"/>
 		</Unit>

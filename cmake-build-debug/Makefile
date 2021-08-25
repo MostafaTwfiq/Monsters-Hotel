@@ -141,6 +141,114 @@ MonstersHotel/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonstersHotel.dir\build.make CMakeFiles/MonstersHotel.dir/build
 .PHONY : MonstersHotel/fast
 
+Users/Guest.obj: Users/Guest.cpp.obj
+
+.PHONY : Users/Guest.obj
+
+# target to build an object file
+Users/Guest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonstersHotel.dir\build.make CMakeFiles/MonstersHotel.dir/Users/Guest.cpp.obj
+.PHONY : Users/Guest.cpp.obj
+
+Users/Guest.i: Users/Guest.cpp.i
+
+.PHONY : Users/Guest.i
+
+# target to preprocess a source file
+Users/Guest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonstersHotel.dir\build.make CMakeFiles/MonstersHotel.dir/Users/Guest.cpp.i
+.PHONY : Users/Guest.cpp.i
+
+Users/Guest.s: Users/Guest.cpp.s
+
+.PHONY : Users/Guest.s
+
+# target to generate assembly for a file
+Users/Guest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonstersHotel.dir\build.make CMakeFiles/MonstersHotel.dir/Users/Guest.cpp.s
+.PHONY : Users/Guest.cpp.s
+
+Users/Human.obj: Users/Human.cpp.obj
+
+.PHONY : Users/Human.obj
+
+# target to build an object file
+Users/Human.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonstersHotel.dir\build.make CMakeFiles/MonstersHotel.dir/Users/Human.cpp.obj
+.PHONY : Users/Human.cpp.obj
+
+Users/Human.i: Users/Human.cpp.i
+
+.PHONY : Users/Human.i
+
+# target to preprocess a source file
+Users/Human.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonstersHotel.dir\build.make CMakeFiles/MonstersHotel.dir/Users/Human.cpp.i
+.PHONY : Users/Human.cpp.i
+
+Users/Human.s: Users/Human.cpp.s
+
+.PHONY : Users/Human.s
+
+# target to generate assembly for a file
+Users/Human.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonstersHotel.dir\build.make CMakeFiles/MonstersHotel.dir/Users/Human.cpp.s
+.PHONY : Users/Human.cpp.s
+
+Users/Monster.obj: Users/Monster.cpp.obj
+
+.PHONY : Users/Monster.obj
+
+# target to build an object file
+Users/Monster.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonstersHotel.dir\build.make CMakeFiles/MonstersHotel.dir/Users/Monster.cpp.obj
+.PHONY : Users/Monster.cpp.obj
+
+Users/Monster.i: Users/Monster.cpp.i
+
+.PHONY : Users/Monster.i
+
+# target to preprocess a source file
+Users/Monster.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonstersHotel.dir\build.make CMakeFiles/MonstersHotel.dir/Users/Monster.cpp.i
+.PHONY : Users/Monster.cpp.i
+
+Users/Monster.s: Users/Monster.cpp.s
+
+.PHONY : Users/Monster.s
+
+# target to generate assembly for a file
+Users/Monster.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonstersHotel.dir\build.make CMakeFiles/MonstersHotel.dir/Users/Monster.cpp.s
+.PHONY : Users/Monster.cpp.s
+
+Users/User.obj: Users/User.cpp.obj
+
+.PHONY : Users/User.obj
+
+# target to build an object file
+Users/User.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonstersHotel.dir\build.make CMakeFiles/MonstersHotel.dir/Users/User.cpp.obj
+.PHONY : Users/User.cpp.obj
+
+Users/User.i: Users/User.cpp.i
+
+.PHONY : Users/User.i
+
+# target to preprocess a source file
+Users/User.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonstersHotel.dir\build.make CMakeFiles/MonstersHotel.dir/Users/User.cpp.i
+.PHONY : Users/User.cpp.i
+
+Users/User.s: Users/User.cpp.s
+
+.PHONY : Users/User.s
+
+# target to generate assembly for a file
+Users/User.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonstersHotel.dir\build.make CMakeFiles/MonstersHotel.dir/Users/User.cpp.s
+.PHONY : Users/User.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -177,6 +285,18 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... MonstersHotel
+	@echo ... Users/Guest.obj
+	@echo ... Users/Guest.i
+	@echo ... Users/Guest.s
+	@echo ... Users/Human.obj
+	@echo ... Users/Human.i
+	@echo ... Users/Human.s
+	@echo ... Users/Monster.obj
+	@echo ... Users/Monster.i
+	@echo ... Users/Monster.s
+	@echo ... Users/User.obj
+	@echo ... Users/User.i
+	@echo ... Users/User.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

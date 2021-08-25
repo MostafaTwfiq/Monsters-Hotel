@@ -88,19 +88,79 @@ CMakeFiles/MonstersHotel.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MonstersHotel.dir/main.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mosta\CLionProjects\MonstersHotel\main.cpp -o CMakeFiles\MonstersHotel.dir\main.cpp.s
 
+CMakeFiles/MonstersHotel.dir/Users/User.cpp.obj: CMakeFiles/MonstersHotel.dir/flags.make
+CMakeFiles/MonstersHotel.dir/Users/User.cpp.obj: ../Users/User.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\mosta\CLionProjects\MonstersHotel\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MonstersHotel.dir/Users/User.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MonstersHotel.dir\Users\User.cpp.obj -c C:\Users\mosta\CLionProjects\MonstersHotel\Users\User.cpp
+
+CMakeFiles/MonstersHotel.dir/Users/User.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MonstersHotel.dir/Users/User.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mosta\CLionProjects\MonstersHotel\Users\User.cpp > CMakeFiles\MonstersHotel.dir\Users\User.cpp.i
+
+CMakeFiles/MonstersHotel.dir/Users/User.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MonstersHotel.dir/Users/User.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mosta\CLionProjects\MonstersHotel\Users\User.cpp -o CMakeFiles\MonstersHotel.dir\Users\User.cpp.s
+
+CMakeFiles/MonstersHotel.dir/Users/Monster.cpp.obj: CMakeFiles/MonstersHotel.dir/flags.make
+CMakeFiles/MonstersHotel.dir/Users/Monster.cpp.obj: ../Users/Monster.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\mosta\CLionProjects\MonstersHotel\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MonstersHotel.dir/Users/Monster.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MonstersHotel.dir\Users\Monster.cpp.obj -c C:\Users\mosta\CLionProjects\MonstersHotel\Users\Monster.cpp
+
+CMakeFiles/MonstersHotel.dir/Users/Monster.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MonstersHotel.dir/Users/Monster.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mosta\CLionProjects\MonstersHotel\Users\Monster.cpp > CMakeFiles\MonstersHotel.dir\Users\Monster.cpp.i
+
+CMakeFiles/MonstersHotel.dir/Users/Monster.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MonstersHotel.dir/Users/Monster.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mosta\CLionProjects\MonstersHotel\Users\Monster.cpp -o CMakeFiles\MonstersHotel.dir\Users\Monster.cpp.s
+
+CMakeFiles/MonstersHotel.dir/Users/Human.cpp.obj: CMakeFiles/MonstersHotel.dir/flags.make
+CMakeFiles/MonstersHotel.dir/Users/Human.cpp.obj: ../Users/Human.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\mosta\CLionProjects\MonstersHotel\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MonstersHotel.dir/Users/Human.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MonstersHotel.dir\Users\Human.cpp.obj -c C:\Users\mosta\CLionProjects\MonstersHotel\Users\Human.cpp
+
+CMakeFiles/MonstersHotel.dir/Users/Human.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MonstersHotel.dir/Users/Human.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mosta\CLionProjects\MonstersHotel\Users\Human.cpp > CMakeFiles\MonstersHotel.dir\Users\Human.cpp.i
+
+CMakeFiles/MonstersHotel.dir/Users/Human.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MonstersHotel.dir/Users/Human.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mosta\CLionProjects\MonstersHotel\Users\Human.cpp -o CMakeFiles\MonstersHotel.dir\Users\Human.cpp.s
+
+CMakeFiles/MonstersHotel.dir/Users/Guest.cpp.obj: CMakeFiles/MonstersHotel.dir/flags.make
+CMakeFiles/MonstersHotel.dir/Users/Guest.cpp.obj: ../Users/Guest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\mosta\CLionProjects\MonstersHotel\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MonstersHotel.dir/Users/Guest.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MonstersHotel.dir\Users\Guest.cpp.obj -c C:\Users\mosta\CLionProjects\MonstersHotel\Users\Guest.cpp
+
+CMakeFiles/MonstersHotel.dir/Users/Guest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MonstersHotel.dir/Users/Guest.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mosta\CLionProjects\MonstersHotel\Users\Guest.cpp > CMakeFiles\MonstersHotel.dir\Users\Guest.cpp.i
+
+CMakeFiles/MonstersHotel.dir/Users/Guest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MonstersHotel.dir/Users/Guest.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mosta\CLionProjects\MonstersHotel\Users\Guest.cpp -o CMakeFiles\MonstersHotel.dir\Users\Guest.cpp.s
+
 # Object files for target MonstersHotel
 MonstersHotel_OBJECTS = \
-"CMakeFiles/MonstersHotel.dir/main.cpp.obj"
+"CMakeFiles/MonstersHotel.dir/main.cpp.obj" \
+"CMakeFiles/MonstersHotel.dir/Users/User.cpp.obj" \
+"CMakeFiles/MonstersHotel.dir/Users/Monster.cpp.obj" \
+"CMakeFiles/MonstersHotel.dir/Users/Human.cpp.obj" \
+"CMakeFiles/MonstersHotel.dir/Users/Guest.cpp.obj"
 
 # External object files for target MonstersHotel
 MonstersHotel_EXTERNAL_OBJECTS =
 
 MonstersHotel.exe: CMakeFiles/MonstersHotel.dir/main.cpp.obj
+MonstersHotel.exe: CMakeFiles/MonstersHotel.dir/Users/User.cpp.obj
+MonstersHotel.exe: CMakeFiles/MonstersHotel.dir/Users/Monster.cpp.obj
+MonstersHotel.exe: CMakeFiles/MonstersHotel.dir/Users/Human.cpp.obj
+MonstersHotel.exe: CMakeFiles/MonstersHotel.dir/Users/Guest.cpp.obj
 MonstersHotel.exe: CMakeFiles/MonstersHotel.dir/build.make
 MonstersHotel.exe: CMakeFiles/MonstersHotel.dir/linklibs.rsp
 MonstersHotel.exe: CMakeFiles/MonstersHotel.dir/objects1.rsp
 MonstersHotel.exe: CMakeFiles/MonstersHotel.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\mosta\CLionProjects\MonstersHotel\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable MonstersHotel.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\mosta\CLionProjects\MonstersHotel\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable MonstersHotel.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\MonstersHotel.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
