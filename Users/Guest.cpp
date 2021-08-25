@@ -1,9 +1,16 @@
 #include "Guest.h"
 
-Guest::Guest(string userName, UserType userT, int nightC, int dryClC, int spaC) : User(userName, userT) {
+#include <utility>
+
+Guest::Guest(string userName, UserType userT, int nightC, int dryClC, int spaC, int numOfN
+             ,  bool dryCB, bool spaCB) : User(move(userName), userT) {
     Guest::costPerNight = nightC;
     Guest::dryCleaningCost = dryClC;
     Guest::spaCost = spaC;
+    Guest::numOfNights = numOfN;
+    Guest::dryCleaningB = dryCB;
+    Guest::spaCleaningB = spaCB;
+
 }
 
 int Guest::getCostPerNight() {

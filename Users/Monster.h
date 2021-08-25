@@ -5,13 +5,13 @@
 #ifndef MONSTERSHOTEL_MONSTER_H
 #define MONSTERSHOTEL_MONSTER_H
 
-#include "User.h"
+#include "Guest.h"
 
-class Monster : public User{
+class Monster : public Guest {
 
-private:
-    int costPerNight;
-    int
+public:
+    Monster(string name, int numOfNights, bool dryC, bool spaC);
+
 };
 
 

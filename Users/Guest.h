@@ -9,9 +9,12 @@ private:
     int costPerNight;
     int dryCleaningCost;
     int spaCost;
+    int numOfNights;
+    bool dryCleaningB;
+    bool spaCleaningB;
 
 protected:
-    Guest(string userName, UserType userT, int nightC, int dryClC, int spaC);
+    Guest(string userName, UserType userT, int nightC, int dryClC, int spaC, int numOfN, bool dryCB, bool spaCB);
     int getCostPerNight();
     int getDryCleanCost();
     int getSpaCost();
