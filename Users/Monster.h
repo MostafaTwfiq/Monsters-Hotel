@@ -1,7 +1,3 @@
-//
-// Created by mosta on 8/25/2021.
-//
-
 #ifndef MONSTERSHOTEL_MONSTER_H
 #define MONSTERSHOTEL_MONSTER_H
 
@@ -10,7 +6,7 @@
 class Monster : public Guest {
 
 public:
-    Monster(string name, int numOfNights, bool dryC, bool spaC);
+    Monster(string name, int numOfNights, int numOfRooms, bool dryC, bool spaC);
 
 };
 
