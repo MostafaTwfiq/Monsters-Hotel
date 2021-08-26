@@ -14,6 +14,8 @@ using namespace std;
 User *signNewUser(int reservedMonRooms, int reservedHumanRooms);
 User **addNewUser(User **usersArr, int length, int usersCount, User *user);
 bool checkIfPositiveInteger(const string& s);
+User *deleteUser(User **usersArr, int length, int ID);
+
 
 int countMonstersResRooms(User **usersArr, int length) {
     int counter = 0;
@@ -50,32 +52,62 @@ User *findUserByID(User **usersArr, int length, int ID) {
 void receptionistMenu(User **usersArr, int length) {
     string input;
     while (true) {
-    cout << "Please choose from the following:-\n1- View number of available and reserved rooms.\n2- List guests.\n3- Logout." << endl;
-    cin >> input;
-    if (input == "1") {
-        int reservedMonRooms = countMonstersResRooms(usersArr, length);
-        int reservedHumansRooms = countHumansResRooms(usersArr, length);
-        printf("Total available rooms: %d\n", HotelProperties::totalMonRooms - reservedMonRooms + HotelProperties::totalHumanRooms - reservedHumansRooms);
-        printf("Total available monsters rooms: %d\n", HotelProperties::totalMonRooms - reservedMonRooms);
-        printf("Total available human rooms: %d\n",  HotelProperties::totalHumanRooms - reservedHumansRooms);
-        printf("Total reserved monsters rooms: %d\n", reservedMonRooms);
-        printf("Total reserved human rooms: %d\n", reservedHumansRooms);
-    } else if (input == "2") {
-        for (int i = 0; i < length; i++) {
-            if (usersArr[i]->getUserType() != RECEPTIONIST) {
-                printf("User number %d:-\n", i + 1);
-                cout << ((Guest *) usersArr[i])->toString() << endl;
-                cout << "\n" << endl;
+        cout << "Please choose from the following:-\n1- View number of available and reserved rooms.\n2- List guests.\n3- Logout." << endl;
+        cin >> input;
+        if (input == "1") {
+            int reservedMonRooms = countMonstersResRooms(usersArr, length);
+            int reservedHumansRooms = countHumansResRooms(usersArr, length);
+            printf("Total available rooms: %d\n",
+                   HotelProperties::totalMonRooms - reservedMonRooms + HotelProperties::totalHumanRooms -
+                   reservedHumansRooms);
+            printf("Total available monsters rooms: %d\n", HotelProperties::totalMonRooms - reservedMonRooms);
+            printf("Total available human rooms: %d\n", HotelProperties::totalHumanRooms - reservedHumansRooms);
+            printf("Total reserved monsters rooms: %d\n", reservedMonRooms);
+            printf("Total reserved human rooms: %d\n", reservedHumansRooms);
+        } else if (input == "2") {
+            for (int i = 0; i < length; i++) {
+                if (usersArr[i]->getUserType() != RECEPTIONIST) {
+                    printf("User number %d:-\n", i + 1);
+                    cout << ((Guest *) usersArr[i])->toString() << endl;
+                    cout << "\n" << endl;
+                }
             }
+        } else if (input == "3") {
+            return;
+        } else {
+            cout << "Invalid input !." << endl;
         }
-    } else if (input == "3") {
-        return;
-    } else {
-        cout << "Invalid input !." << endl;
     }
 }
 
-void guestMenu() {
+int guestMenu(Guest *guest, User **usersArr, int length) {
+    string input;
+    while (true) {
+        cout << "Please choose from the following:-\n1- Extend reservation.\n2- Cancel reservation.\n3- Exit.\n:-" << endl;
+        cin >> input;
+        if (input == "1") {
+             int extendedNights = 0;
+             cout << "Please enter the number of extra nights:- " << endl;
+             cin >> input;
+            while (!extendedNights) {
+                if (checkIfPositiveInteger(input))
+                    extendedNights = stoi(input);
+                else
+                    cout << "Please enter a valid input!." << endl;
+            }
+            printf("Extra cost will be: %d\n", guest->calExtraNightsCost(extendedNights));
+            guest->extendReservation(extendedNights);
+
+        } else if (input == "2") {
+            if (deleteUser(usersArr, length, guest->getID()) != nullptr) {
+                return length - 1;
+            }
+        } else if (input == "3") {
+            return length;
+        } else {
+            cout << "Invalid input !." << endl;
+        }
+    }
 
 }
 
@@ -113,9 +145,9 @@ void printMenu() {
             if (user == nullptr) {
                 continue;
             } else if (user->getUserType() == RECEPTIONIST) {
-                receptionistMenu();
+                receptionistMenu(users, usersCount);
             } else {
-                guestMenu();
+                usersCount = guestMenu((Guest *) user, users, usersCount);
             }
 
         } else if (input == "3") {
@@ -241,8 +273,20 @@ User **addNewUser(User **usersArr, int length, int usersCount, User *user) {
     return usersArr;
 }
 
+User *deleteUser(User **usersArr, int length, int ID) {
+    User *deletedUser;
+    for (int i = 0; i < length; i++) {
+        if (usersArr[i]->getUserType() == ID) {
+            deletedUser = usersArr[i];
+            for (int j = i; j < length - 1; j++)
+                usersArr[j] = usersArr[j + 1];
+        }
+    }
+
+    return deletedUser;
+}
+
 
 int main() {
-
     return 0;
 }
