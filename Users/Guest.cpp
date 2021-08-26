@@ -51,3 +51,22 @@ int Guest::getNumOfRooms() {
 Guest::~Guest() {
 
 }
+
+string Guest::toString() {
+    string s;
+    s.append("User type: ");
+    s.append(Guest::getUserType() == MONSTER ? "Monster\n" : "Human\n");
+    s.append("Number of reserved rooms: ");
+    s.append(to_string(Guest::getNumOfRooms()));
+    s.append("\n");
+    s.append("Number of nights: ");
+    s.append(to_string(Guest::getNumOfNights()));
+    s.append("\n");
+    s.append("Dry cleaning: ");
+    s.append(Guest::dryCleaningB ? "Yes\n" : "No\n");
+    s.append("Spa cleaning: ");
+    s.append(Guest::spaCleaningB ? "Yes\n" : "No\n");
+    s.append("Total cost: ");
+    s.append(to_string(Guest::calculateTotalCost()));
+    return s;
+}

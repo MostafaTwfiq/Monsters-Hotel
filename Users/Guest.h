@@ -29,6 +29,7 @@ public:
     int calculateTotalCost();
     int calExtraNightsCost(int extraNights);
     void extendReservation(int extraNights);
+    string toString();
 
 
 };

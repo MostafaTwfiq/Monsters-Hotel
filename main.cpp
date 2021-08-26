@@ -11,6 +11,74 @@
 
 using namespace std;
 
+User *signNewUser(int reservedMonRooms, int reservedHumanRooms);
+User **addNewUser(User **usersArr, int length, int usersCount, User *user);
+bool checkIfPositiveInteger(const string& s);
+
+int countMonstersResRooms(User **usersArr, int length) {
+    int counter = 0;
+    for (int i = 0; i < length; i++) {
+        if (usersArr[i]->getUserType() == MONSTER)
+            counter += ((Monster *) usersArr[i])->getNumOfNights();
+
+    }
+
+    return counter;
+}
+
+int countHumansResRooms(User **usersArr, int length) {
+    int counter = 0;
+    for (int i = 0; i < length; i++) {
+        if (usersArr[i]->getUserType() == HUMAN)
+            counter += ((Human *) usersArr[i])->getNumOfNights();
+
+    }
+
+    return counter;
+}
+
+User *findUserByID(User **usersArr, int length, int ID) {
+    for (int i = 0; i < length; i++) {
+        if (usersArr[i]->getID() == ID)
+            return usersArr[i];
+
+    }
+
+    return nullptr;
+}
+
+void receptionistMenu(User **usersArr, int length) {
+    string input;
+    while (true) {
+    cout << "Please choose from the following:-\n1- View number of available and reserved rooms.\n2- List guests.\n3- Logout." << endl;
+    cin >> input;
+    if (input == "1") {
+        int reservedMonRooms = countMonstersResRooms(usersArr, length);
+        int reservedHumansRooms = countHumansResRooms(usersArr, length);
+        printf("Total available rooms: %d\n", HotelProperties::totalMonRooms - reservedMonRooms + HotelProperties::totalHumanRooms - reservedHumansRooms);
+        printf("Total available monsters rooms: %d\n", HotelProperties::totalMonRooms - reservedMonRooms);
+        printf("Total available human rooms: %d\n",  HotelProperties::totalHumanRooms - reservedHumansRooms);
+        printf("Total reserved monsters rooms: %d\n", reservedMonRooms);
+        printf("Total reserved human rooms: %d\n", reservedHumansRooms);
+    } else if (input == "2") {
+        for (int i = 0; i < length; i++) {
+            if (usersArr[i]->getUserType() != RECEPTIONIST) {
+                printf("User number %d:-\n", i + 1);
+                cout << ((Guest *) usersArr[i])->toString() << endl;
+                cout << "\n" << endl;
+            }
+        }
+    } else if (input == "3") {
+        return;
+    } else {
+        cout << "Invalid input !." << endl;
+    }
+}
+
+void guestMenu() {
+
+}
+
 void printMenu() {
     string input;
     int length = 5;
@@ -24,9 +92,32 @@ void printMenu() {
         cin >> input;
 
         if (input == "1") {
+            User *newUser = signNewUser(countMonstersResRooms(users, usersCount), countHumansResRooms(users, usersCount));
+            if (newUser != nullptr) {
+                users = addNewUser(users, length, usersCount, newUser);
+            }
 
         } else if (input == "2") {
-            cout << "Enter your ID:- " << endl;
+            cout << "Enter your ID or enter E exit:- " << endl;
+            User *user = nullptr;
+            while (true) {
+                cin >> input;
+                if (input == "E" || input == "e") {
+                    break;
+                } else if (checkIfPositiveInteger(input) && (user = findUserByID(users, usersCount, stoi(input))) != nullptr) {
+                    break;
+                } else
+                    cout << "Please enter a valid ID !." << endl;
+            }
+
+            if (user == nullptr) {
+                continue;
+            } else if (user->getUserType() == RECEPTIONIST) {
+                receptionistMenu();
+            } else {
+                guestMenu();
+            }
+
         } else if (input == "3") {
             break;
         } else {
@@ -50,7 +141,7 @@ User *signNewUser(int reservedMonRooms, int reservedHumanRooms) {
     int numOfRooms = 0, numOfNights = 0;
     bool dryClean, spaClean;
     UserType userType;
-    cout << "Please choose the user type:-\n1- Receptionist\n2- Monster\n3- Human\n:-" <<endl;
+    cout << "Please choose the user type:-\n1- Receptionist\n2- Monster\n3- Human\n:-" << endl;
     while (true) {
         cin >> input;
         if (input == "1") {
