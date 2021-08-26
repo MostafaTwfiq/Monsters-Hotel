@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/MonstersHotel.dir/Users/Guest.cpp.obj"
   "CMakeFiles/MonstersHotel.dir/Users/Human.cpp.obj"
   "CMakeFiles/MonstersHotel.dir/Users/Monster.cpp.obj"
+  "CMakeFiles/MonstersHotel.dir/Users/Receptionist.cpp.obj"
   "CMakeFiles/MonstersHotel.dir/Users/User.cpp.obj"
   "CMakeFiles/MonstersHotel.dir/main.cpp.obj"
   "MonstersHotel.exe"

@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/mosta/CLionProjects/MonstersHotel/Users/Guest.cpp" "C:/Users/mosta/CLionProjects/MonstersHotel/cmake-build-debug/CMakeFiles/MonstersHotel.dir/Users/Guest.cpp.obj"
   "C:/Users/mosta/CLionProjects/MonstersHotel/Users/Human.cpp" "C:/Users/mosta/CLionProjects/MonstersHotel/cmake-build-debug/CMakeFiles/MonstersHotel.dir/Users/Human.cpp.obj"
   "C:/Users/mosta/CLionProjects/MonstersHotel/Users/Monster.cpp" "C:/Users/mosta/CLionProjects/MonstersHotel/cmake-build-debug/CMakeFiles/MonstersHotel.dir/Users/Monster.cpp.obj"
+  "C:/Users/mosta/CLionProjects/MonstersHotel/Users/Receptionist.cpp" "C:/Users/mosta/CLionProjects/MonstersHotel/cmake-build-debug/CMakeFiles/MonstersHotel.dir/Users/Receptionist.cpp.obj"
   "C:/Users/mosta/CLionProjects/MonstersHotel/Users/User.cpp" "C:/Users/mosta/CLionProjects/MonstersHotel/cmake-build-debug/CMakeFiles/MonstersHotel.dir/Users/User.cpp.obj"
   "C:/Users/mosta/CLionProjects/MonstersHotel/main.cpp" "C:/Users/mosta/CLionProjects/MonstersHotel/cmake-build-debug/CMakeFiles/MonstersHotel.dir/main.cpp.obj"
   )

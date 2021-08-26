@@ -106,6 +106,12 @@
 		<Unit filename="C:/Users/mosta/CLionProjects/MonstersHotel/Users/Monster.h">
 			<Option target="MonstersHotel"/>
 		</Unit>
+		<Unit filename="C:/Users/mosta/CLionProjects/MonstersHotel/Users/Receptionist.cpp">
+			<Option target="MonstersHotel"/>
+		</Unit>
+		<Unit filename="C:/Users/mosta/CLionProjects/MonstersHotel/Users/Receptionist.h">
+			<Option target="MonstersHotel"/>
+		</Unit>
 		<Unit filename="C:/Users/mosta/CLionProjects/MonstersHotel/Users/User.cpp">
 			<Option target="MonstersHotel"/>
 		</Unit>

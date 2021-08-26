@@ -48,6 +48,23 @@ User *signNewUser() {
     string input, name;
     int numOfRooms = 0, numOfNights = 0;
     bool dryClean, spaClean;
+    UserType userType;
+    cout << "Please choose the user type:-\n1- Receptionist\n2- Monster\n3- Human\n:-" <<endl;
+    while (true) {
+        cin >> input;
+        if (input == "1") {
+            userType = RECEPTIONIST;
+        } else if (input == "2") {
+            userType = MONSTER;
+        } else if (input == "3") {
+            userType = HUMAN;
+        } else {
+            cout << "Please enter a valid input !." << endl;
+            continue;
+        }
+        break;
+    }
+
     cout << "Please enter user name: " << endl;
     cin >> input;
     name = move(input);

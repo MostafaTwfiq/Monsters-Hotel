@@ -249,6 +249,33 @@ Users/Monster.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonstersHotel.dir\build.make CMakeFiles/MonstersHotel.dir/Users/Monster.cpp.s
 .PHONY : Users/Monster.cpp.s
 
+Users/Receptionist.obj: Users/Receptionist.cpp.obj
+
+.PHONY : Users/Receptionist.obj
+
+# target to build an object file
+Users/Receptionist.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonstersHotel.dir\build.make CMakeFiles/MonstersHotel.dir/Users/Receptionist.cpp.obj
+.PHONY : Users/Receptionist.cpp.obj
+
+Users/Receptionist.i: Users/Receptionist.cpp.i
+
+.PHONY : Users/Receptionist.i
+
+# target to preprocess a source file
+Users/Receptionist.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonstersHotel.dir\build.make CMakeFiles/MonstersHotel.dir/Users/Receptionist.cpp.i
+.PHONY : Users/Receptionist.cpp.i
+
+Users/Receptionist.s: Users/Receptionist.cpp.s
+
+.PHONY : Users/Receptionist.s
+
+# target to generate assembly for a file
+Users/Receptionist.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MonstersHotel.dir\build.make CMakeFiles/MonstersHotel.dir/Users/Receptionist.cpp.s
+.PHONY : Users/Receptionist.cpp.s
+
 Users/User.obj: Users/User.cpp.obj
 
 .PHONY : Users/User.obj
@@ -324,6 +351,9 @@ help:
 	@echo ... Users/Monster.obj
 	@echo ... Users/Monster.i
 	@echo ... Users/Monster.s
+	@echo ... Users/Receptionist.obj
+	@echo ... Users/Receptionist.i
+	@echo ... Users/Receptionist.s
 	@echo ... Users/User.obj
 	@echo ... Users/User.i
 	@echo ... Users/User.s

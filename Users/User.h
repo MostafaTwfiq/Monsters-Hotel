@@ -17,7 +17,6 @@ private:
 
 
 protected:
-    User();
     User(string name, UserType userType);
 
 public:
