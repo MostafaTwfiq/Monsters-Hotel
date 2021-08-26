@@ -16,12 +16,17 @@ void addNewUser(User *user);
 bool checkIfPositiveInteger(const string& s);
 User *deleteUser(int ID);
 
+// These if the global variables, any way it's not a good practice but it's not the main purpose in this project.
 int HotelProperties::IDCounter = 1;
 int length = 5;
 int usersCount = 0;
 User **users = (User **) malloc(sizeof (User) * length);
 
 
+/**
+ * This function will count the number if reserved monsters rooms.
+ * @return the number of reserved monsters rooms
+ */
 int countMonstersResRooms() {
     int counter = 0;
     for (int i = 0; i < usersCount; i++) {
@@ -33,6 +38,10 @@ int countMonstersResRooms() {
     return counter;
 }
 
+/**
+ * This function will return the number of reserved humans rooms.
+ * @return the number of reserved humans rooms.
+ */
 int countHumansResRooms() {
     int counter = 0;
     for (int i = 0; i < usersCount; i++) {
@@ -44,6 +53,11 @@ int countHumansResRooms() {
     return counter;
 }
 
+/**
+ * This function will return the user with the passed ID if found, other wise it will return null
+ * @param ID the id of the user
+ * @return it will return the user pointer if found, other wise it will return null
+ */
 User *findUserByID(int ID) {
     for (int i = 0; i < usersCount; i++) {
         if (users[i]->getID() == ID)
@@ -54,6 +68,9 @@ User *findUserByID(int ID) {
     return nullptr;
 }
 
+/**
+ * This function will print and interact with the receptionist user interface.
+ */
 void receptionistMenu() {
     string input;
     while (true) {
@@ -85,6 +102,10 @@ void receptionistMenu() {
     }
 }
 
+/**
+ * This function will print and interact with the guests interface.
+ * @param guest
+ */
 void guestMenu(Guest *guest) {
     string input;
     while (true) {
@@ -116,6 +137,10 @@ void guestMenu(Guest *guest) {
 
 }
 
+
+/**
+ * This function will print the main menu and interact with the user
+ */
 void printMenu() {
     string input;
 
@@ -165,6 +190,11 @@ void printMenu() {
 }
 
 
+/**
+ * This function will check if the passed string is an positive non-zero integer
+ * @param s the string
+ * @return it will return true if the passed integer is an integer larger than zero
+ */
 bool checkIfPositiveInteger(const string& s) {
     for (char c : s) {
         if (c < '0' || c > '9')
@@ -174,6 +204,15 @@ bool checkIfPositiveInteger(const string& s) {
     return !(s == "0");
 }
 
+
+/**
+ * This function will take user data as input and it will create a new instance
+ *
+ * <<This function should been splitted into multiple function for more readable and maintainable code>>
+ * @param reservedMonRooms the number of reserved monsters rooms
+ * @param reservedHumanRooms the number of reserved humans rooms
+ * @return it will return the new user instance
+ */
 User *signNewUser(int reservedMonRooms, int reservedHumanRooms) {
     string input, name;
     int numOfRooms = 0, numOfNights = 0;
@@ -269,6 +308,10 @@ User *signNewUser(int reservedMonRooms, int reservedHumanRooms) {
 }
 
 
+/**
+ * This function will add a new user into the users array
+ * @param user the new user to be added
+ */
 void addNewUser(User *user) {
     if (usersCount == length) {
         length *= 2;
@@ -278,8 +321,13 @@ void addNewUser(User *user) {
     users[usersCount++] = user;
 }
 
-User *deleteUser( int ID) {
-    User *deletedUser;
+/**
+ * This function will delete the user with the passed id from users array if found
+ * @param ID the user id
+ * @return it will return the deleted user if found, other wise it will return null;
+ */
+User *deleteUser(int ID) {
+    User *deletedUser = nullptr;
     for (int i = 0; i < usersCount; i++) {
         if (users[i]->getUserType() == ID) {
             deletedUser = users[i];
