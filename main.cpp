@@ -7,6 +7,7 @@
 #include "Users/Guest.h"
 #include "Users/Monster.h"
 #include "Users/Human.h"
+#include "Users/Receptionist.h"
 
 using namespace std;
 
@@ -41,10 +42,10 @@ bool checkIfPositiveInteger(const string& s) {
             return false;
     }
 
-    return true;
+    return !(s == "0");
 }
 
-User *signNewUser() {
+User *signNewUser(int reservedMonRooms, int reservedHumanRooms) {
     string input, name;
     int numOfRooms = 0, numOfNights = 0;
     bool dryClean, spaClean;
@@ -64,12 +65,17 @@ User *signNewUser() {
         }
         break;
     }
+    if (userType == MONSTER && HotelProperties::totalMonRooms == reservedMonRooms
+    || userType == HUMAN && HotelProperties::totalHumanRooms == reservedHumanRooms) {
+        cout << "Sorry the hotel is full." << endl;
+        return nullptr;
+    }
 
     cout << "Please enter user name: " << endl;
     cin >> input;
     name = move(input);
     cout << "Please enter number of nights: " << endl;
-    while (!numOfNights) {
+    while (userType != RECEPTIONIST && !numOfNights) {
         cin >> input;
         if (checkIfPositiveInteger(input))
             numOfNights = stoi(input);
@@ -79,22 +85,28 @@ User *signNewUser() {
     }
 
     cout << "Please enter number of rooms: " << endl;
-    while (!numOfRooms) {
+    while (userType != RECEPTIONIST && !numOfRooms) {
         cin >> input;
-        if (checkIfPositiveInteger(input))
+        if (checkIfPositiveInteger(input)) {
             numOfRooms = stoi(input);
-        else
+            if (userType == MONSTER && HotelProperties::totalMonRooms < reservedMonRooms + numOfRooms) {
+                printf("There is only %d available", HotelProperties::totalMonRooms - reservedMonRooms);
+            } else if (userType == HUMAN && HotelProperties::totalHumanRooms < reservedHumanRooms + numOfRooms) {
+                printf("There is only %d available", HotelProperties::totalHumanRooms - reservedHumanRooms);
+            }
+
+        } else
             cout << "Please enter a valid input!." << endl;
 
     }
 
     cout << "Do you want a dry clean ?[Y/N]:" << endl;
-    while (true) {
+    while (userType != RECEPTIONIST) {
         cin >> input;
-        if (input == "Y" || strcasecmp(input.c_str(), "yes")) {
+        if (input == "Y" || !strcasecmp(input.c_str(), "yes")) {
             dryClean = true;
             break;
-        } else if (input == "N" || strcasecmp(input.c_str(), "no")) {
+        } else if (input == "N" || !strcasecmp(input.c_str(), "no")) {
             dryClean = false;
             break;
         } else
@@ -103,17 +115,26 @@ User *signNewUser() {
     }
 
     cout << "Do you want a spa clean ?[Y/N]:" << endl;
-    while (true) {
+    while (userType != RECEPTIONIST) {
         cin >> input;
-        if (input == "Y" || strcasecmp(input.c_str(), "yes")) {
+        if (input == "Y" || !strcasecmp(input.c_str(), "yes")) {
             spaClean = true;
             break;
-        } else if (input == "N" || strcasecmp(input.c_str(), "no")) {
+        } else if (input == "N" || !strcasecmp(input.c_str(), "no")) {
             spaClean = false;
             break;
         } else
             cout << "Please enter a valid input!." << endl;
 
+    }
+
+    switch (userType) {
+        case RECEPTIONIST:
+            return new Receptionist(name);
+        case MONSTER:
+            return new Monster(name, numOfNights, numOfRooms, dryClean, spaClean);
+        case HUMAN:
+            return new Human(name, numOfNights, numOfRooms, dryClean, spaClean);
     }
 
 }
@@ -131,10 +152,6 @@ User **addNewUser(User **usersArr, int length, int usersCount, User *user) {
 
 
 int main() {
-    Human *human = new Human("Mostafa", 3, 2, true, false);
-    cout << human->getName() << endl;
-    //Human human("Mostafa", 3, 2, true, false);
-    //cout << human.calculateTotalCost() << endl;
-    printMenu();
+
     return 0;
 }

@@ -18,6 +18,11 @@ CMakeFiles/MonstersHotel.dir/Users/Monster.cpp.obj: ../Users/Monster.cpp
 CMakeFiles/MonstersHotel.dir/Users/Monster.cpp.obj: ../Users/Monster.h
 CMakeFiles/MonstersHotel.dir/Users/Monster.cpp.obj: ../Users/User.h
 
+CMakeFiles/MonstersHotel.dir/Users/Receptionist.cpp.obj: ../Users/Receptionist.cpp
+CMakeFiles/MonstersHotel.dir/Users/Receptionist.cpp.obj: ../Users/Receptionist.h
+CMakeFiles/MonstersHotel.dir/Users/Receptionist.cpp.obj: ../Users/User.h
+
+CMakeFiles/MonstersHotel.dir/Users/User.cpp.obj: ../Properties/HotelProperties.h
 CMakeFiles/MonstersHotel.dir/Users/User.cpp.obj: ../Users/User.cpp
 CMakeFiles/MonstersHotel.dir/Users/User.cpp.obj: ../Users/User.h
 
@@ -25,6 +30,7 @@ CMakeFiles/MonstersHotel.dir/main.cpp.obj: ../Properties/HotelProperties.h
 CMakeFiles/MonstersHotel.dir/main.cpp.obj: ../Users/Guest.h
 CMakeFiles/MonstersHotel.dir/main.cpp.obj: ../Users/Human.h
 CMakeFiles/MonstersHotel.dir/main.cpp.obj: ../Users/Monster.h
+CMakeFiles/MonstersHotel.dir/main.cpp.obj: ../Users/Receptionist.h
 CMakeFiles/MonstersHotel.dir/main.cpp.obj: ../Users/User.h
 CMakeFiles/MonstersHotel.dir/main.cpp.obj: ../main.cpp
 

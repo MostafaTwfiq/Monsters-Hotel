@@ -2,8 +2,8 @@
 #include "../Properties/HotelProperties.h"
 
 User::User(string name, UserType userType) : name(move(name)), userType(userType) {
-    User::ID = HotelProperties::currTotalUsers;
-    HotelProperties::currTotalUsers += 1;
+    //User::ID = HotelProperties::getCurrTotalUsers();
+    //HotelProperties::increaseTotalUsers();
 }
 
 int User::getID() {

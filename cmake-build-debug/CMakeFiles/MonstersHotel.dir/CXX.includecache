@@ -20,6 +20,10 @@ C:/Users/mosta/CLionProjects/MonstersHotel/Users/Monster.h
 Guest.h
 C:/Users/mosta/CLionProjects/MonstersHotel/Users/Guest.h
 
+C:/Users/mosta/CLionProjects/MonstersHotel/Users/Receptionist.h
+User.h
+C:/Users/mosta/CLionProjects/MonstersHotel/Users/User.h
+
 C:/Users/mosta/CLionProjects/MonstersHotel/Users/User.h
 string
 -
@@ -28,6 +32,8 @@ C:/Users/mosta/CLionProjects/MonstersHotel/main.cpp
 iostream
 -
 stdio.h
+-
+string.h
 -
 Properties/HotelProperties.h
 C:/Users/mosta/CLionProjects/MonstersHotel/Properties/HotelProperties.h
@@ -39,4 +45,6 @@ Users/Monster.h
 C:/Users/mosta/CLionProjects/MonstersHotel/Users/Monster.h
 Users/Human.h
 C:/Users/mosta/CLionProjects/MonstersHotel/Users/Human.h
+Users/Receptionist.h
+C:/Users/mosta/CLionProjects/MonstersHotel/Users/Receptionist.h
 

@@ -18,7 +18,12 @@ CMakeFiles/MonstersHotel.dir/Users/Monster.cpp.obj
  C:/Users/mosta/CLionProjects/MonstersHotel/Users/Monster.cpp
  C:/Users/mosta/CLionProjects/MonstersHotel/Users/Monster.h
  C:/Users/mosta/CLionProjects/MonstersHotel/Users/User.h
+CMakeFiles/MonstersHotel.dir/Users/Receptionist.cpp.obj
+ C:/Users/mosta/CLionProjects/MonstersHotel/Users/Receptionist.cpp
+ C:/Users/mosta/CLionProjects/MonstersHotel/Users/Receptionist.h
+ C:/Users/mosta/CLionProjects/MonstersHotel/Users/User.h
 CMakeFiles/MonstersHotel.dir/Users/User.cpp.obj
+ C:/Users/mosta/CLionProjects/MonstersHotel/Properties/HotelProperties.h
  C:/Users/mosta/CLionProjects/MonstersHotel/Users/User.cpp
  C:/Users/mosta/CLionProjects/MonstersHotel/Users/User.h
 CMakeFiles/MonstersHotel.dir/main.cpp.obj
@@ -26,5 +31,6 @@ CMakeFiles/MonstersHotel.dir/main.cpp.obj
  C:/Users/mosta/CLionProjects/MonstersHotel/Users/Guest.h
  C:/Users/mosta/CLionProjects/MonstersHotel/Users/Human.h
  C:/Users/mosta/CLionProjects/MonstersHotel/Users/Monster.h
+ C:/Users/mosta/CLionProjects/MonstersHotel/Users/Receptionist.h
  C:/Users/mosta/CLionProjects/MonstersHotel/Users/User.h
  C:/Users/mosta/CLionProjects/MonstersHotel/main.cpp
