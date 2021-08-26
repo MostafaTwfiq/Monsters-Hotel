@@ -5,6 +5,7 @@
 
 class Human : public Guest{
 
+public:
     Human(string name, int numOfNights, int numOfRooms, bool dryC, bool spaC);
     ~Human();
 

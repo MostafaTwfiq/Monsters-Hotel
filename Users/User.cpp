@@ -1,12 +1,9 @@
 #include "User.h"
-
-#include <utility>
-
-
-User::User() {}
+#include "../Properties/HotelProperties.h"
 
 User::User(string name, UserType userType) : name(move(name)), userType(userType) {
-
+    User::ID = HotelProperties::currTotalUsers;
+    HotelProperties::currTotalUsers += 1;
 }
 
 int User::getID() {

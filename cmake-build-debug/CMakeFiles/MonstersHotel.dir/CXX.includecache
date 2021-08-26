@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/mosta/CLionProjects/MonstersHotel/Properties/HotelProperties.h
+
+C:/Users/mosta/CLionProjects/MonstersHotel/Users/Guest.h
+User.h
+C:/Users/mosta/CLionProjects/MonstersHotel/Users/User.h
+
+C:/Users/mosta/CLionProjects/MonstersHotel/Users/Human.h
+Guest.h
+C:/Users/mosta/CLionProjects/MonstersHotel/Users/Guest.h
+
+C:/Users/mosta/CLionProjects/MonstersHotel/Users/Monster.h
+Guest.h
+C:/Users/mosta/CLionProjects/MonstersHotel/Users/Guest.h
+
+C:/Users/mosta/CLionProjects/MonstersHotel/Users/User.h
+string
+-
+
+C:/Users/mosta/CLionProjects/MonstersHotel/main.cpp
+iostream
+-
+stdio.h
+-
+Properties/HotelProperties.h
+C:/Users/mosta/CLionProjects/MonstersHotel/Properties/HotelProperties.h
+Users/User.h
+C:/Users/mosta/CLionProjects/MonstersHotel/Users/User.h
+Users/Guest.h
+C:/Users/mosta/CLionProjects/MonstersHotel/Users/Guest.h
+Users/Monster.h
+C:/Users/mosta/CLionProjects/MonstersHotel/Users/Monster.h
+Users/Human.h
+C:/Users/mosta/CLionProjects/MonstersHotel/Users/Human.h
+

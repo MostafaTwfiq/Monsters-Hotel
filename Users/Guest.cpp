@@ -8,6 +8,7 @@ Guest::Guest(string userName, UserType userT,
     Guest::dryCleaningCost = dryClC;
     Guest::spaCost = spaC;
     Guest::numOfNights = numOfN;
+    Guest::numOfRooms = numOfRooms;
     Guest::dryCleaningB = dryCB;
     Guest::spaCleaningB = spaCB;
 
@@ -30,7 +31,7 @@ int Guest::getNumOfNights() {
 }
 
 int Guest::calculateTotalCost() {
-    return Guest::numOfNights * Guest::costPerNight
+    return Guest::numOfNights * Guest::costPerNight * Guest::numOfRooms
     + (dryCleaningB ? dryCleaningCost : 0)
     + (spaCleaningB ? spaCost : 0);
 }
@@ -40,7 +41,7 @@ void Guest::extendReservation(int extraNights) {
 }
 
 int Guest::calExtraNightsCost(int extraNights) {
-    return extraNights * Guest::costPerNight;
+    return extraNights * Guest::costPerNight * Guest::numOfRooms;
 }
 
 int Guest::getNumOfRooms() {

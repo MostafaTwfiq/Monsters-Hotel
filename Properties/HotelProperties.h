@@ -4,19 +4,12 @@
 
 class HotelProperties {
 
-private:
-    static int currTotalUsers;
-    static int totalMonRooms;
-    static int totalHumanRooms;
-
 public:
-    void setTotalUsers(int totUsers);
-    void setTotalMonRooms(int monRooms);
-    void setTotalHumanRooms(int humanRooms);
-    int getTotalUsersNum();
-    int getTotalMonRooms();
-    int getTotalHumanRooms();
-};
+    static int currTotalUsers;
+    const static int totalMonRooms = 15;
+    const static int totalHumanRooms = 5;
 
+
+};
 
 #endif //MONSTERSHOTEL_HOTELPROPERTIES_H
